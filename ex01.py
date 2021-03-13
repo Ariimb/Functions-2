@@ -1,15 +1,17 @@
 1. Write a Python function to find the Max of three numbers.
 
-def max_of_two( 2, 1 ):
-    if 2 > 1:
-        return 2
-    return 1
-def max_of_three( 2, 1, 3 ):
-    return max_of_two( 2, max_of_two( 1, 3 ) )
+#include <stdio.h>
+def max_of_two( x, y ):
+    if x > y:
+        return x
+    return y
+def max_of_three( x, y, z ):
+    return max_of_two( x, max_of_two( y, z ) )
 print(max_of_three(2, 3, 1))
 
 2. Write a Python function to sum all the numbers in a list. Sample List : (8, 2, 3, 0, 7)
 
+#include <stdio.h>
 def sum(numbers):
     total = 0
     for x in numbers:
@@ -19,6 +21,7 @@ print(sum((8, 2, 3, 0, 7)))
 
 3. Write a Python function to multiply all the numbers in a list. Sample List : (8, 2, 3, -1, 7)
 
+#include <stdio.h>
 def multiply(numbers):  
     total = 1
     for x in numbers:
@@ -28,6 +31,7 @@ print(multiply((8, 2, 3, -1, 7)))
 
 4. Write a Python program to reverse a string. Sample String : "1234abcd"
 
+#include <stdio.h>
 def string_reverse(str1):
 
     rstr1 = ''
@@ -40,6 +44,7 @@ print(string_reverse('1234abcd'))
 
 5. Write a Python function to calculate the factorial of a number (a non-negative integer). The function accepts the number as an argument.
 
+#include <stdio.h>
 def factorial(n):
     if n == 0:
         return 1
@@ -50,6 +55,7 @@ print(factorial(n))
 
 6. Write a Python function to check whether a number is in a given range.
 
+#include <stdio.h>
 def factorial(n):
     if n == 0:
         return 1
@@ -60,6 +66,7 @@ print(factorial(n))
 
 7. Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters. Sample String : 'The quick Brow Fox'
 
+#include <stdio.h>
 def string_test(s):
     d={"UPPER_CASE":0, "LOWER_CASE":0}
     for c in s:
@@ -77,6 +84,7 @@ string_test('The quick Brown Fox')
 
 8. Write a Python function that takes a list and returns a new list with unique elements of the first list. Sample List : [1,2,3,3,3,3,4,5]
 
+#include <stdio.h>
 def string_test(s):
     d={"UPPER_CASE":0, "LOWER_CASE":0}
     for c in s:
@@ -94,6 +102,7 @@ string_test('The quick Brown Fox')
 
 9. Write a Python function that takes a number as a parameter and check the number is prime or not. 
 
+#include <stdio.h>
 def test_prime(n):
     if (n==1):
         return False
@@ -108,6 +117,7 @@ print(test_prime(9))
 
 10. Write a Python program to print the even numbers from a given list. Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+#include <stdio.h>
 def is_even_num(l):
     enum = []
     for n in l:
@@ -118,6 +128,7 @@ print(is_even_num([1, 2, 3, 4, 5, 6, 7, 8, 9]))
 
 11. Write a Python function to check whether a number is perfect or not.
 
+#include <stdio.h>
 def perfect_number(n):
     sum = 0
     for x in range(1, n):
@@ -128,6 +139,7 @@ print(perfect_number(6))
 
 12. Write a Python function that checks whether a passed string is palindrome or not.
 
+#include <stdio.h>
 def isPalindrome(string):
 	left_pos = 0
 	right_pos = len(string) - 1
