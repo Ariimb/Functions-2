@@ -32,7 +32,31 @@
         scanf("%d",&a[i]);
     }
  
-    
+    void main()
+{
+	int num,res=0;
+	clrscr();
+	printf("\nENTER A NUMBER: ");
+	scanf("%d",&num);
+	res=prime(num);
+	if(res==0)
+		printf("\n%d IS A PRIME NUMBER",num);
+	else
+		printf("\n%d IS NOT A PRIME NUMBER",num);
+	getch();
+}
+int prime(int n)
+{
+	int i;
+	for(i=2;i<=n/2;i++)
+	{
+		if(n%i!=0)
+			continue;
+		else
+			return 1;
+	}
+	return 0;
+}
     for(i=0; i<n; i++)
     {
          
@@ -143,7 +167,9 @@ int remove_duplicate(int arr[], int n)
   return j;
 }
 
-int main()
+9. Write a function that takes a number as a parameter and check the number is prime or not.
+
+    int main()
 {
   int n;
   scanf("%d", &n);
@@ -166,3 +192,69 @@ int main()
   return 0;
 }
 
+10. Write a program to print the even numbers from a given list.
+
+int main()
+{
+    int i, n;
+  
+    printf("Print all even numbers till: ");
+    scanf("%d", &n);
+
+    printf("Even numbers from 1 to %d are: \n", n);
+
+    for(i=1; i<=n; i++)
+    {
+        if(i%2 == 0)
+        {
+            printf("%d\n", i);
+        }
+    }
+
+    return 0;
+}
+
+11. Write a function to check whether a number is perfect or not.
+    
+    int main()
+{
+    int num,loop;
+    int sum;
+ 
+    printf("Enter an integer number: ");
+    scanf("%d",&num);
+ 
+     
+    sum=0;
+ 
+    for(loop=1; loop<num;loop++)
+    {
+        if(num%loop==0)
+            sum+=loop;
+    }
+ 
+    if(sum==num)
+        printf("%d is a perfect number.",num);
+    else
+        printf("%d is not a perfect number.",num);
+ 
+    return 0;
+}
+
+12. Write a function that checks whether a passed string is palindrome or not.
+    
+void isPalindrome(char str[]) 
+{  
+    int l = 0; 
+    int h = strlen(str) - 1; 
+  
+    while (h > l) 
+    { 
+        if (str[l++] != str[h--]) 
+        { 
+            printf("%s is Not Palindrome", str); 
+            return; 
+        } 
+    } 
+    printf("%s is palindrome", str); 
+} 
